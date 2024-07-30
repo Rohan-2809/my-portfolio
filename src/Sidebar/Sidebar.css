@@ -1,0 +1,97 @@
+.sidebar {
+  /* width: 50%; */
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  height: 100vh;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 48px;
+  color: rgb(226, 232, 240);
+  margin: 0;
+}
+
+.sub-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  color: rgb(226, 232, 240);
+  margin-top: 12px;
+}
+
+.nav-container {
+  margin: 30px 0px;
+  padding: 15px 0px;
+}
+.vertical-nav {
+  width: 200px;
+}
+
+.vertical-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vertical-nav li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.vertical-nav a {
+  text-decoration: none;
+  color: rgb(148, 163, 184);
+  display: flex;
+  align-items: center;
+  transition: font-weight 0.3s;
+}
+
+.vertical-nav .line {
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background: rgb(148, 163, 184);
+  margin-right: 10px;
+  transition: width 0.3s;
+}
+
+.vertical-nav a:hover {
+  color: #fff;
+}
+
+.vertical-nav a:hover .line {
+  width: 100px;
+  height: 2px;
+  background: #fff;
+}
+
+/* Styling for selected item */
+.vertical-nav .selected a {
+  color: #fff;
+}
+
+.vertical-nav .selected .line {
+  width: 100px;
+  height: 2px;
+  background: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    padding: 0px;
+    position: unset;
+    padding: 5px 10px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .sub-title {
+    font-size: 16px;
+  }
+  .nav-container {
+    display: none;
+  }
+}

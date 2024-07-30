@@ -1,0 +1,40 @@
+.content-container {
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+
+.imp-content {
+  color: #fff;
+  font-weight: 400;
+}
+
+.worktime-container {
+  display: flex;
+  padding: 15px;
+  transition: background 0.3s, box-shadow 0.3s, border-radius 0.3s;
+}
+
+.worktime-container:hover {
+  border-radius: 5px;
+  background: rgb(45, 212, 191, 0.1); 
+  box-shadow: 0 0 10px rgb(45, 212, 191, 0.1); 
+
+}
+
+
+.time {
+  flex: 0 0 175px;
+}
+
+.work {
+  flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .worktime-container {
+    display: block;
+    padding: 15px 0px;
+  }
+}
+
+

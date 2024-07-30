@@ -1,0 +1,5 @@
+.skills-row {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
